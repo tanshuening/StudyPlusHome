@@ -1,8 +1,11 @@
 package com.example.studyplushome
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintSet.Layout
 import androidx.fragment.app.commit
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val homeButton: ImageButton = findViewById(R.id.homeButton)
         val sessionButton: ImageButton = findViewById(R.id.sessionButton)
         val profileButton: ImageButton = findViewById(R.id.profileButton)
+
 
         homeButton.setOnClickListener {
             supportFragmentManager.commit {

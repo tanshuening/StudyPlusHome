@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.LinearLayout
 
 // TODO: Rename parameter arguments, choose names that match
@@ -15,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomePageFragment.newInstance] factory method to
+ * Use the [RoomPageFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomePageFragment : Fragment() {
+class RoomPageFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,18 +37,12 @@ class HomePageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_home_page, container, false)
+        val view = inflater.inflate(R.layout.fragment_room_page, container, false)
 
-        val createRoom: LinearLayout = view.findViewById(R.id.createRoom)
+        val backButton: ImageButton = view.findViewById(R.id.backButton)
 
-        createRoom.setOnClickListener {
-            startActivity(Intent(activity, CreateRoomForm::class.java))
-        }
-
-        val cardViewRoom: LinearLayout = view.findViewById(R.id.card_view_room)
-
-        cardViewRoom.setOnClickListener {
-            startActivity(Intent(activity, RoomPage::class.java))
+        backButton.setOnClickListener {
+            startActivity(Intent(activity, HomePageFragment::class.java))
         }
 
         return view
@@ -60,12 +55,12 @@ class HomePageFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment HomePageFragment.
+         * @return A new instance of fragment StudyDetailsPageFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomePageFragment().apply {
+            RoomPageFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

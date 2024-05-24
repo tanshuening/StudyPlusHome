@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Announcements Section -->
+        <TextView
+            android:id="@+id/announcementTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Announcements"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/announcementContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Welcome to our study group! Here are some important announcements."
+            android:textSize="16sp" />
+
+        <!-- File Resources Section -->
+        <TextView
+            android:id="@+id/resourcesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File Resources"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/resource1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resource 1"
+            android:fontFamily="@font/roboto"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/resource2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Resource 2"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
