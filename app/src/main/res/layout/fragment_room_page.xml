@@ -48,7 +48,7 @@
             <TextView
                 android:id="@+id/groupDescriptionTextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:text="Group Description"
                 android:textSize="16sp"
                 android:fontFamily="@font/roboto"
@@ -92,6 +92,16 @@
                     android:scaleType="fitCenter"
                     android:background="@null"
                     android:src="@drawable/delete"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageButton
+                    android:id="@+id/announcementButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/annoucement"
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="16dp"/>
             </LinearLayout>
